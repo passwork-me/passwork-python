@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  passwork-cli:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - PASSWORK_HOST=${PASSWORK_HOST:-https://passwork.example.com}
+      - PASSWORK_TOKEN=${PASSWORK_TOKEN}
+      - PASSWORK_REFRESH_TOKEN=${PASSWORK_REFRESH_TOKEN}
+      - PASSWORK_MASTER_KEY=${PASSWORK_MASTER_KEY}
+    entrypoint: passwork-cli
+    command: --help 

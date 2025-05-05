@@ -1,0 +1,43 @@
+{
+    "id": "673c4da03779c24fd60a80b2",
+    "vaultId": "66f2d2efc8d8ccee4d033a84",
+    "folderId": null,
+    "passwordEncrypted": "amt4cwv48xb6pp1h71b76xjhahr3amhg71tpmwjf6t468tjr8dn6gwk9emumyphb858mpm1t993kedv6e5r5jhb28xnk6d1f6t4pygr",
+    "keyEncrypted": "amt4cwv48xb6pp1h71aq2ubea5p36ujaan1mpcv7egu6yjb1e9242jkab94qguknd964mw29exq3jtaf6dvpmnkd8dwpgjjpe1tm2xjb91j7jnujdhj6mcuc6tc62gj66gukgwv9a4yku",
+    "customs": [
+        {
+            "type": "amt4cwv48xb6pp1h70qn4j3tcx5jyy25e8wjyuvm9tjnmnaa9t84jhtpc9x6ct23envn2f8",
+            "value": "amt4cwv48xb6pp1h71x7juvncdbmjuth85454e22d9p3gp34d58jpeaq6tj7ajvjdh4k8f8",
+            "name": "amt4cwv48xb6pp1h5xd4um3hb5t4ckkn9mw4uc3674tkgy2kedtmgdbb917kcxtpewwmaf8"
+        },
+        {
+            "type": "amt4cwv48xb6pp1h5d85erbn9nx30jk2e0vpux2a85tqckamc9kmmvaed9t6uvbu5x2q6f8",
+            "value": "amt4cwv48xb6pp1h5dm2yju970u5cdar8dd4uwut895mcw1k9tbk0guja5hp6bvnan572nvh9d27ajtbd1u5ghj18hd4prb589anav0",
+            "name": "amt4cwv48xb6pp1h5ct66e2gdnjnacuh5d96gxa58na7cp275xd5ej1gb5mmukan5cnppf8"
+        },
+        {
+            "type": "amt4cwv48xb6pp1h70nmwtjjb9830kv189r7gx2hcxt30h1be524gv1penq42eb2ex46pf8",
+            "value": "amt4cwv48xb6pp1h5d776c9q94nn0m2jcd5mek9p9rwn6uvjd17pmy35ax23jnaddrwn2f8",
+            "name": "amt4cwv48xb6pp1h75n4pmkkd9d6yhj9enjk4avqcnu7mvhnd5r6mmb88xn6pcjr9hnnjf8"
+        }
+    ],
+    "attachments": [
+        {
+            "id": "67f7ed34077a9f28a3086cc2",
+            "encryptedKey": "amt4cwv48xb6pp1h5dgngmurah442xapc8rmjkutdww72u1qdctmenum6mnmmv226du3gxap6xgqan9b6hcqgvhjcdcpcu1pf9jmcw1fet272na38cv4mhu4d585cnbjcn9q8u3p9n254ru9d16mcv31ad452v3q9d3mej1h8xn64e1g65bpaaup71jk0tvp5dkq8kv69mumcvkmewtmydba6dx52bvadwtpwjuj75amyv2m6hu6rnv9f9upmp3e6n1n0k23ddq30cufamyg",
+            "name": "test.txt"
+        }
+    ],
+    "name": "name-test",
+    "login": "login-test",
+    "url": "https://example.com",
+    "description": "notes test",
+    "tags": [
+        "test",
+        "test-2"
+    ],
+    "isDeleted": false,
+    "color": 5,
+    "isFavorite": true,
+    "vaultMasterKeyEncrypted": "U9HkOZpHO6XBOK0y78wVG2BDtEJqYyP2RgdOqoHj3ELcpgsFDH+AYihvsd+4d2p5yoer8vNJUh9T6XN1AjrFjNTYyivDYWnE63J5fF2qgdHvsgiDI5My5quWIMxFMgrxopEjcnwbeWoSlR624Is8tKodfYcXlzplOW+ZxQcp8Sc="
+}

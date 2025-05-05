@@ -1,0 +1,26 @@
+image: passwork-cli:latest
+
+pipelines:
+  default:
+    - step:
+        name: Deploy with secured credentials
+        script:
+          # Get database credentials from Passwork and run database migrations
+          - passwork-cli exec --password-id "db_credentials" \
+              python manage.py migrate
+          
+          # Get API keys from Passwork and run deployment script
+          - passwork-cli exec --password-id "api_keys,deploy_keys" \
+              ./scripts/deploy.sh
+          
+          # Notify the team with a direct API call
+          - passwork-cli api --method POST \
+              --endpoint "v1/inbox/messages" \
+              --params '{"recipient":"devops","message":"Deployment completed successfully"}'
+        services:
+          - docker
+
+definitions:
+  services:
+    docker:
+      memory: 2048 
