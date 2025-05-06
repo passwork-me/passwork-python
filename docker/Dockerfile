@@ -13,7 +13,7 @@ RUN apt-get update && \
 WORKDIR /app
 
 # Install passwork-cli
-RUN pip install --no-cache-dir git+https://bitbucket.org/passworkteam/passwork-python-connector.git
+RUN pip install --no-cache-dir git+ssh://git@github.com:passwork-me/passwork-python.git
 
 # Create a non-root user to run the CLI
 RUN groupadd -r passwork && useradd -r -g passwork passwork
