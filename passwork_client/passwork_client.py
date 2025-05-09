@@ -12,9 +12,6 @@ from .exceptions import PassworkError
 import urllib3
 from urllib3.exceptions import InsecureRequestWarning
 
-# Suppress SSL certificate verification warnings globally
-urllib3.disable_warnings(InsecureRequestWarning)
-
 class PassworkClient(ApiClient, MasterKeyManager, SessionManager, Item, Vault, Inbox, User, Shortcut, Link, Batch):
     """
     A client for interacting with the Passwork API.
@@ -26,6 +23,11 @@ class PassworkClient(ApiClient, MasterKeyManager, SessionManager, Item, Vault, I
         # Initialize ApiClient variables
         self.host = host.rstrip('/')  # Ensure no trailing slash
         self.verify_ssl = verify_ssl
+        
+        # Disable SSL warnings only if verify_ssl is explicitly set to False
+        if not self.verify_ssl:
+            urllib3.disable_warnings(InsecureRequestWarning)
+            
         self.access_token = None
         self.refresh_token = None
         self.master_key_hash = None

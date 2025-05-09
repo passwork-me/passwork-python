@@ -205,7 +205,10 @@ def rsa_encrypt(data, public_key):
     return decrypted_data
 
 def generate_rsa_keys(masterKey: str):
-    private_key = rsa.generate_private_key(3, 1024)
+    private_key = rsa.generate_private_key(
+        public_exponent=65537,  
+        key_size=2048,          
+    )
 
     private_pem = private_key.private_bytes(
         encoding=serialization.Encoding.PEM,
