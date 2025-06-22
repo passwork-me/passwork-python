@@ -4,7 +4,7 @@ A Python client for interacting with the Passwork password management API. It pr
 
 ## Installation
 
-You can install the package directly from Bitbucket:
+You can install the package directly from Github:
 
 ```bash
 pip install git+ssh://git@github.com:passwork-me/passwork-python.git
@@ -56,9 +56,12 @@ For detailed CLI documentation and examples, see the [CLI README](cli/README.md)
 For CI/CD pipelines and containerized environments, a Docker image is provided:
 
 ```bash
-# Build the Docker image
-cd docker
-docker build -t passwork-cli .
+# Pull the Docker image
+docker pull passwork/passwork-cli:latest
+docker tag passwork/passwork-cli:latest passwork-cli
+
+# Or build it yourself
+docker build -f docker/Dockerfile -t passwork-cli .
 
 # Run a command using the container
 docker run -it --rm \
@@ -258,4 +261,4 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE. 
+SOFTWARE.
