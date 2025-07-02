@@ -161,7 +161,8 @@ class ApiClient:
             # Handle error
             raise PassworkError(f"Failed to refresh token: {response.status_code}", "refresh_token_failed")
         
-        result = response.json()
+
+        result = self._process_response(response)
         
         self.access_token = result["accessToken"]
         self.refresh_token = result["refreshToken"]
