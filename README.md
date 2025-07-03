@@ -92,6 +92,8 @@ from passwork_client import PassworkClient
 
 # Initialize the client
 client = PassworkClient(host="https://your-passwork-instance.com")
+# To disable SSL certificate verification (e.g., for a self-signed certificate), initialize like this:
+# client = PassworkClient(host="https://your-passwork-instance.com", verify_ssl=False)
 
 # Login with a token
 client.set_tokens("access-token")
@@ -127,7 +129,7 @@ Save and restore sessions to avoid repeated authentication:
 encryption_key = client.save_session("session.file", None, True)
 
 # Later, load the session
-client = PassworkClient("https://your-passwork-instance.com", True)
+client = PassworkClient("https://your-passwork-instance.com")
 client.load_session("session.file", encryption_key)
 ```
 

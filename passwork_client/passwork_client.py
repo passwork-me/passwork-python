@@ -12,8 +12,6 @@ from .exceptions import PassworkError
 import urllib3
 from urllib3.exceptions import InsecureRequestWarning
 
-# Suppress SSL certificate verification warnings globally
-urllib3.disable_warnings(InsecureRequestWarning)
 
 class PassworkClient(ApiClient, MasterKeyManager, SessionManager, Item, Vault, Inbox, User, Shortcut, Link, Batch):
     """
