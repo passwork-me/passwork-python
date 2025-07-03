@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="passwork-python",
-    version="0.1.2",
+    version="0.1.3",
     description="Python client for Passwork 7 API",
     author="Passwork Team",
     url="https://github.com/passwork-me/passwork-python",
