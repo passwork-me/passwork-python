@@ -55,7 +55,10 @@ class ApiClient:
 
     def _process_response(self, response):
         """Process API response and handle errors."""
-        data = response.json()
+        try:
+            data = response.json()
+        except json.JSONDecodeError:
+            raise PassworkError(f"Response not in JSON format. Text: {response.text}")
         result = data
 
         if data and isinstance(data, dict):
